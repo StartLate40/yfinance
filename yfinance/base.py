@@ -196,6 +196,7 @@ class TickerBase():
         except Exception as e:
             print(e)
             print(self.ticker)
+            return None
         # Work with errors
         debug_mode = True
         if "debug" in kwargs and isinstance(kwargs["debug"], bool):
